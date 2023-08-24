@@ -49,7 +49,7 @@ function defaultObjectValues() {
 // Then asks if the object "vowelCharacters" has anything that
 //  matches with the current character in the loop.
 function countVowel() {
-    for (i = 0; i < userInput.value.length; i++) {
+    for (let i = 0; i < userInput.value.length; i++) {
         let char = userInput.value[i].toLowerCase();
         if (vowelCharacters.hasOwnProperty(char)) {
             vowelCharacters[char]++
@@ -57,5 +57,7 @@ function countVowel() {
     }
     clearInput()
     updateView()
+}
+function stringifyObject() {
 }
 
